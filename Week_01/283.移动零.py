@@ -11,11 +11,17 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         j=0
-        for i in nums:
+        for i in range(len(nums)):
             if i != 0:
                 nums[j]=nums[i]
                 if i != j:
                     nums[i]=0
                 j+=1
+        # 交换两个数
+        # j=0
+        # for i in range(len(nums)):
+        #     if nums[i]!=0:
+        #         nums[j],nums[i]=nums[i],nums[j]
+        #         j+=1
 # @lc code=end
 
