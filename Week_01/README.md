@@ -1,3 +1,4 @@
+[TOC]
 # 方法论：
 ## 1. 五毒神掌
 1. 5-10 分钟读题和思考，如果没有思路，看题解，默写代码
@@ -11,459 +12,48 @@
 3. 尽可能多地动手写
 4. 测试用例
 ## 3. 学习态度
-刻意练习（IDE,Leetcode等），以职业的标准来要求自己
-# Coding style
-# VScode关键快捷键：
+1. 开始就要注意Coding style，体现专业性
+2. 刻意练习（IDE快捷操作,Leetcode做题等），以职业的标准来要求自己
+# VScode关键快捷键
+F1：打开命令面板
+F2：选中名字后，可以批量重命名
+F12：跳到函数定义处（Ctrl+F12跳转到函数实现处，Shift+F12引用跳转）
+Ctrl+左右箭头：单词间移动
+Alt+上下箭头：代码上下移动
+Ctrl+Del：右侧删除整个单词
+Fn+左箭头/Home：行头
+Fn+右箭头/End：行尾
+Ctrl+Shift+[， Ctrl+Shift+]：折叠打开代码块
+Ctrl+C, Ctrl+V：如果不选中，默认复制或剪切一整行
+Shift+Delete或者Ctrl+Shift+K：删除整行
+Ctrl+E：命令面板-最近访问的文件
+Ctrl+P：命令面板-搜索文件
+Ctrl+U：回到上一个光标的位置
+Ctrl+G：命令面板-输入行号，可快速到达
+Shift：多按Shift可以选中文本
 # 作业情况
-<table>
-   <tr>
-      <td>序号</td>
-      <td>类型</td>
-      <td>题目编号</td>
-      <td>题目</td>
-      <td>难度</td>
-      <td>第1次</td>
-      <td></td>
-      <td>第2次</td>
-      <td></td>
-      <td>第3次</td>
-      <td></td>
-      <td>第4次</td>
-      <td></td>
-      <td>第5次</td>
-      <td></td>
-      <td>方法</td>
-   </tr>
-   <tr>
-      <td>1</td>
-      <td>实战题目</td>
-      <td>11</td>
-      <td>盛最多水的容器</td>
-      <td>中等</td>
-      <td>2020/7/13</td>
-      <td>KW29/1</td>
-      <td>2020/7/15</td>
-      <td>KW29/3</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>双指针法：双向夹逼</td>
-   </tr>
-   <tr>
-      <td>2</td>
-      <td>实战题目</td>
-      <td>70</td>
-      <td>爬楼梯</td>
-      <td>简单</td>
-      <td>2020/7/13</td>
-      <td>KW29/1</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>递归法，找重复性，不要人肉递归</td>
-   </tr>
-   <tr>
-      <td>3</td>
-      <td>实战题目</td>
-      <td>15</td>
-      <td>三数之和</td>
-      <td>中等</td>
-      <td>2020/7/15</td>
-      <td>KW29/3</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>排序+双指针，除重是难点</td>
-   </tr>
-   <tr>
-      <td>4</td>
-      <td>实战题目</td>
-      <td>206</td>
-      <td>反转链表</td>
-      <td>简单</td>
-      <td>2020/7/20</td>
-      <td>KW30/1</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>5</td>
-      <td>实战题目</td>
-      <td>24</td>
-      <td>两两交换链表中的节点</td>
-      <td>中等</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>6</td>
-      <td>实战题目</td>
-      <td>141</td>
-      <td>环形链表</td>
-      <td>简单</td>
-      <td>2020/7/16</td>
-      <td>KW29/4</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>"暴力法</td>
-   </tr>
-   <tr>
-      <td>哈希"</td>
-   </tr>
-   <tr>
-      <td>7</td>
-      <td>实战题目</td>
-      <td>142</td>
-      <td>环形链表 II</td>
-      <td>中等</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>8</td>
-      <td>实战题目</td>
-      <td>25</td>
-      <td>K 个一组翻转链表</td>
-      <td>困难</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>9</td>
-      <td>实战题目</td>
-      <td>20</td>
-      <td>有效的括号</td>
-      <td>简单</td>
-      <td>2020/7/16</td>
-      <td>KW29/4</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>10</td>
-      <td>实战题目</td>
-      <td>155</td>
-      <td>最小栈</td>
-      <td>简单</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>11</td>
-      <td>实战题目</td>
-      <td>84</td>
-      <td>柱状图中最大的矩形</td>
-      <td>困难</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>12</td>
-      <td>实战题目</td>
-      <td>239</td>
-      <td>滑动窗口最大值</td>
-      <td>困难</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>13</td>
-      <td>周作业</td>
-      <td>26</td>
-      <td>删除排序数组中的重复项</td>
-      <td>简单</td>
-      <td>2020/7/15</td>
-      <td>KW29/3</td>
-      <td>2020/7/16</td>
-      <td>KW29/4</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>"1.快慢指针</td>
-   </tr>
-   <tr>
-      <td>2.排序数组"</td>
-   </tr>
-   <tr>
-      <td>14</td>
-      <td>周作业</td>
-      <td>189</td>
-      <td>旋转数组</td>
-      <td>简单</td>
-      <td>2020/7/15</td>
-      <td>KW29/3</td>
-      <td>2020/7/16</td>
-      <td>KW29/4</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>"1. 暴力解法：构建指针. 时间O(M+N) 空间O(M+N)</td>
-   </tr>
-   <tr>
-      <td>2. 递归： 时间O(M+N) 空间O(M+N)"</td>
-   </tr>
-   <tr>
-      <td>15</td>
-      <td>周作业</td>
-      <td>21</td>
-      <td>合并两个有序链表</td>
-      <td>简单</td>
-      <td>2020/7/20</td>
-      <td>KW30/1</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>"1. 递归法</td>
-   </tr>
-   <tr>
-      <td>2. 迭代法"</td>
-   </tr>
-   <tr>
-      <td>16</td>
-      <td>周作业</td>
-      <td>88</td>
-      <td>合并两个有序数组</td>
-      <td>简单</td>
-      <td>2020/7/17</td>
-      <td>KW29/5</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>"1.合并后排序：nums1[:]==[]#没有[:],结果会不对，因为nums1会变成另一个内存地址，可用id(nums1)查看</td>
-   </tr>
-   <tr>
-      <td>2.双指针，可以从前向后，也可以从后向前，后者简单。注意循环后m>0或n>0的情况，n>0的情况必须单独处理"</td>
-   </tr>
-   <tr>
-      <td>17</td>
-      <td>周作业</td>
-      <td>1</td>
-      <td>两数之和</td>
-      <td>简单</td>
-      <td>2020/7/16</td>
-      <td>KW29/4</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>18</td>
-      <td>周作业</td>
-      <td>283</td>
-      <td>移动零</td>
-      <td>简单</td>
-      <td>2020/7/14</td>
-      <td>KW29/2</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>19</td>
-      <td>周作业</td>
-      <td>66</td>
-      <td>加一</td>
-      <td>简单</td>
-      <td>2020/7/16</td>
-      <td>KW29/4</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>20</td>
-      <td>周作业</td>
-      <td>242</td>
-      <td>有效的字母异位词</td>
-      <td>简单</td>
-      <td>2020/7/18</td>
-      <td>KW29/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>哈希表</td>
-   </tr>
-   <tr>
-      <td>21</td>
-      <td>周作业</td>
-      <td>641</td>
-      <td>设计循环双端队列</td>
-      <td>中等</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>22</td>
-      <td>周作业</td>
-      <td>49</td>
-      <td>字母异位词分组</td>
-      <td>中等</td>
-      <td>2020/7/19</td>
-      <td>KW30/7</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td>哈希表</td>
-   </tr>
-   <tr>
-      <td>23</td>
-      <td>周作业</td>
-      <td>42</td>
-      <td>接雨水</td>
-      <td>困难</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-      <td>KW0/6</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-</table>
+| 序号 | 类型   | 题目编号 | 题目          | 难度 | 第1次       |        | 第2次       |        | 第3次 |       |
+|----|------|------|-------------|----|-----------|--------|-----------|--------|-----|-------|
+| 1  | 实战题目 | 11   | 盛最多水的容器     | 中等 | 2020/7/13 | KW29/1 | 2020/7/15 | KW29/3 |     | KW0/6 |
+| 2  | 实战题目 | 70   | 爬楼梯         | 简单 | 2020/7/13 | KW29/1 |           | KW0/6  |     | KW0/6 |
+| 3  | 实战题目 | 15   | 三数之和        | 中等 | 2020/7/15 | KW29/3 |           | KW0/6  |     | KW0/6 |
+| 4  | 实战题目 | 206  | 反转链表        | 简单 | 2020/7/20 | KW30/1 |           | KW0/6  |     | KW0/6 |
+| 5  | 实战题目 | 24   | 两两交换链表中的节点  | 中等 |           | KW0/6  |           | KW0/6  |     | KW0/6 |
+| 6  | 实战题目 | 141  | 环形链表        | 简单 | 2020/7/16 | KW29/4 |           | KW0/6  |     | KW0/6 |
+| 7  | 实战题目 | 142  | 环形链表 II     | 中等 |           | KW0/6  |           | KW0/6  |     | KW0/6 |
+| 8  | 实战题目 | 25   | K 个一组翻转链表   | 困难 |           | KW0/6  |           | KW0/6  |     | KW0/6 |
+| 9  | 实战题目 | 20   | 有效的括号       | 简单 | 2020/7/16 | KW29/4 |           | KW0/6  |     | KW0/6 |
+| 10 | 实战题目 | 155  | 最小栈         | 简单 |           | KW0/6  |           | KW0/6  |     | KW0/6 |
+| 11 | 实战题目 | 84   | 柱状图中最大的矩形   | 困难 |           | KW0/6  |           | KW0/6  |     | KW0/6 |
+| 12 | 实战题目 | 239  | 滑动窗口最大值     | 困难 |           | KW0/6  |           | KW0/6  |     | KW0/6 |
+| 13 | 周作业  | 26   | 删除排序数组中的重复项 | 简单 | 2020/7/15 | KW29/3 | 2020/7/16 | KW29/4 |     | KW0/6 |
+| 14 | 周作业  | 189  | 旋转数组        | 简单 | 2020/7/15 | KW29/3 | 2020/7/16 | KW29/4 |     | KW0/6 |
+| 15 | 周作业  | 21   | 合并两个有序链表    | 简单 | 2020/7/20 | KW30/1 |           | KW0/6  |     | KW0/6 |
+| 16 | 周作业  | 88   | 合并两个有序数组    | 简单 | 2020/7/17 | KW29/5 |           | KW0/6  |     | KW0/6 |
+| 17 | 周作业  | 1    | 两数之和        | 简单 | 2020/7/16 | KW29/4 |           | KW0/6  |     | KW0/6 |
+| 18 | 周作业  | 283  | 移动零         | 简单 | 2020/7/14 | KW29/2 |           | KW0/6  |     | KW0/6 |
+| 19 | 周作业  | 66   | 加一          | 简单 | 2020/7/16 | KW29/4 |           | KW0/6  |     | KW0/6 |
+| 20 | 周作业  | 242  | 有效的字母异位词    | 简单 | 2020/7/18 | KW29/6 |           | KW0/6  |     | KW0/6 |
+| 21 | 周作业  | 641  | 设计循环双端队列    | 中等 |           | KW0/6  |           | KW0/6  |     | KW0/6 |
+| 22 | 周作业  | 49   | 字母异位词分组     | 中等 | 2020/7/19 | KW30/7 |           | KW0/6  |     | KW0/6 |
+| 23 | 周作业  | 42   | 接雨水         | 困难 |           | KW0/6  |           | KW0/6  |     | KW0/6 |
