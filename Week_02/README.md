@@ -4,6 +4,7 @@
 - 无法方便的进行直接循环；
 - 递归法更容易，树的定义本身就是可以最小化问题
 2. [课后题-图](https://github.com/Xinchengzelin/AlgorithmQIUZHAO/tree/master/Week_02/homework.jpg)
+<img src="https://github.com/Xinchengzelin/AlgorithmQIUZHAO/tree/master/Week_02/homework.jpg">
 
 # 树问题的总结：
 ## 问题分类：
@@ -16,8 +17,9 @@
 2.	迭代—使用栈。将root入栈stack，while stack：依次pop，append
 两种方法对于二叉树相关问题问题（遍历和翻转等）：时间差别不大，一般递归法比迭代法略快
 
-# 堆
+# 堆及递归
 堆是首次接触，需要加深理解，并在题目中运用。丑数，滑动窗口最大值的问题还需要增加遍数
+组合的几个问题，由于时间仓促并未完成，后续学完回溯、DFS/BFS后需要重新回顾
 
 # 题目记录
 | 序号        | 周次  | 类型   | 题目编号       | 题目              | 难度 | 分类          | 备注      | 第1次       |        | 第2次 |       | 第3次 |       | 方法                     |
