@@ -13,3 +13,4 @@ leetcode200-岛屿数量问题：
 - 理解怎么转换成的N叉树问题
 - 取二维list长宽的方法：m=len(grid) if m==0: return 0  n=len(grid[0])
 - BFS代码感受到了代码之美
+
