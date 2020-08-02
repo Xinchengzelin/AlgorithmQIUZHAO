@@ -15,18 +15,19 @@
         # 浮点数在计算机存储有误差，很大的数计算时可能有误差，所以结果可能为ans+1
 
 
-# 2、二分法 52.85%
-# class Solution:
-#     def mySqrt(self, x: int) -> int:
-#         left,right,ans=0,x,0
-#         while left <= right:
-#             mid=(right+left)//2
-#             if mid*mid <= x:
-#                 ans=mid
-#                 left=mid+1
-#             else:
-#                 right=mid-1
-#         return ans
+# 2、二分法 52.84%
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        left,right=0,x
+        while left < right:
+            mid=(right+left+1)//2
+            if mid*mid == x:
+                return mid
+            elif mid*mid < x:
+                left=mid
+            else:
+                right=mid-1
+        return right
 
 # 3、二分法 84.33%
 # x>=4时，sqrt（x)不会超过x/2
@@ -45,14 +46,14 @@
 #         return int(l)
 
 # 4、牛顿迭代法 84.38%
-class Solution:
-    def mySqrt(self, x: int) -> int:
-        cur=1
-        while True:
-            pre=cur
-            cur=(cur+x/cur)/2
-            if abs(cur-pre)<=1e-6:
-                return int(cur)
+# class Solution:
+#     def mySqrt(self, x: int) -> int:
+#         cur=1
+#         while True:
+#             pre=cur
+#             cur=(cur+x/cur)/2
+#             if abs(cur-pre)<=1e-6:
+#                 return int(cur)
 
 
 # @lc code=end

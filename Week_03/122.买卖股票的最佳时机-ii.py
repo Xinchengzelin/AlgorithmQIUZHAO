@@ -6,7 +6,7 @@
 
 # @lc code=start
 
-# 1、回溯
+# 1、贪心
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         res=0
