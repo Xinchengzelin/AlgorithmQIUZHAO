@@ -7,12 +7,12 @@
 # @lc code=start
 
 # 1、哈希表统计: 60ms(40.31%)
-class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
-        dic={}
-        for i,v in enumerate(nums):
-            dic[v]=dic.get(v,0)+1
-        return max(dic.keys(),key=dic.get)
+# class Solution:
+#     def majorityElement(self, nums: List[int]) -> int:
+#         dic={}
+#         for i,v in enumerate(nums):
+#             dic[v]=dic.get(v,0)+1
+#         return max(dic.keys(),key=dic.get)
 # 2、排序-排序后下标为n/2的元素（下标从 0 开始）一定是众数
 # class Solution: #44ms (92.18%)
 #     def majorityElement(self, nums: List[int]) -> int:
@@ -33,6 +33,7 @@ class Solution: # 184ms(5.13%)
             right_count=sum(1 for i in range(lo,hi+1) if nums[i]==right)
             return left if left_count>right_count else right
         return majority_pick(0,len(nums)-1)
+
 
 # @lc code=end
 

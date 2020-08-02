@@ -19,7 +19,7 @@
 #             return []
 #         queue,res=[root],[]
 #         while queue:
-#             level=[]
+#             level=[]#当前层的res
 #             queue_next=[]#while下一次循环的queue
 #             for item in queue:
 #                 level.append(item.val)
@@ -39,7 +39,7 @@
 #                 return
 #             if len(res)==level:#一层访问完，res中增加一个list，存放下一层的元素
 #                 res.append([])
-#             res[level].append(node.val)
+#             res[level].append(node.val)#该题DFS的关键！！
 #             if node.left:
 #                 helper(node.left,level+1)
 #             if node.right:
