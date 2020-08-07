@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-# 1、动态规划 80.43%
+# 1、动态规划-in place 80.43%/69.93%
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         m=len(obstacleGrid)
@@ -19,7 +19,9 @@ class Solution:
         for i in range(1,m):
             for j in range(1,n):
                 obstacleGrid[i][j]=(obstacleGrid[i-1][j]+obstacleGrid[i][j-1])*(1-obstacleGrid[i][j])
-        print(obstacleGrid)
+        # print(obstacleGrid)
         return obstacleGrid[-1][-1]
+
+
 # @lc code=end
 

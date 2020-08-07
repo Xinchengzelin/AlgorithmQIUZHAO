@@ -17,9 +17,19 @@
 
 # 2、排列组合法 74.17%
 # 只有向右走n-1步，向下走m-1步即可，不同的走法在于第几步向下，第几步向右；C(n-1,m+n-2)或C(m-1,m+n-2)相等
+# class Solution:
+#     def uniquePaths(self, m: int, n: int) -> int:
+#         import math
+#         return int(math.factorial(n+m-2)/math.factorial(m-1)/math.factorial(n-1))
+
+# 3、动态规划-节约空间 74.17%/95.49%
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        import math
-        return int(math.factorial(n+m-2)/math.factorial(m-1)/math.factorial(n-1))
+        dp=[1]*n
+        for i in range(1,m):
+           for j in range(1,n):
+                dp[j]+=dp[j-1]
+        return dp[n-1]
+
 # @lc code=end
 
