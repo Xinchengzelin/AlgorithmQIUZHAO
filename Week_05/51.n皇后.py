@@ -54,8 +54,8 @@
 #         res = []
 #         DFS([],[],[])
 #         return [["." * i +"Q" + "." * (n-i-1) for i in sol] for sol in res]
-# 3、位运算法 86.24%/55.19%
-# class Solution:
-#     def solveNQueens(self, n: int) -> List[List[str]]:
+
+
+
 # @lc code=end
 
